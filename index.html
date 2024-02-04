@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+</head>
+
+<body>
+    <script>
+        const currentHour = new Date().getHours();
+        function getTimeOfDay() {
+            if (currentHour >= 4 && currentHour < 12) {
+                return "Good morning";
+            } else if (currentHour >= 12 && currentHour < 18) {
+                return "Good afternoon";
+            } else if (currentHour >= 18 && currentHour < 21) {
+                return "Good Evening";
+            }
+            else {
+                return "Good Night";
+            }
+        }
+        const a = getTimeOfDay();
+        document.write(`<h1>${a}, Tarun!</h1>`);
+    </script>
+</body>
+
+</html>
